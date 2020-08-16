@@ -1,0 +1,43 @@
+void main() {
+  /**
+   * Funciones
+   * */
+
+  /**
+   * Funciones básicas
+   * */
+  saludar();
+  decirBuenasNoches();
+
+  /**
+   * Parametros
+   * */
+  print(decirMiNombre('Vanessa'));
+  print(datosPersonales(lastName: 'Medina', name: 'Oz'));
+
+  /**
+   * Funciones lambda o funciones flecha
+   * */
+  
+  print(sumaNumerica(10,20));
+
+  
+}
+
+void saludar() {
+  print('Hola Mundo');
+}
+
+void decirBuenasNoches() {
+  print('Buenas Noches');
+}
+
+String decirMiNombre(String name) {
+  return 'Hola $name';
+}
+
+String datosPersonales({String name, String lastName}) {
+  return 'Hola $name $lastName';
+}
+
+int sumaNumerica(x, y) => x + y;
